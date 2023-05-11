@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Details of Vendors</title>
+</head>
+<body style = "background:cyan";>
+<center><table border=5;>
+	<thead>
+		<td>Company_name</td>
+		<td>first_name</td>
+		<td>last_name</td>
+		<td>city</td>
+		<td>postal_code</td>
+		<td>contact_number</td>
+		<td>email_address</td>
+		<td>GST_number</td>
+		<td>webiste</td>
+	</thead>
+
+	{% for row in rows %}
+
+		<tr>
+			<td>{{row["Company_name"]}}</td>
+			<td>{{row["first_name"]}}</td>
+			<td>{{row["last_name"]}}</td>
+			<td>{{row["city"]}}</td>
+			<td>{{row["postal_code"]}}</td>
+			<td>{{row["contact_number"]}}</td>
+			<td>{{row["email_address"]}}</td>
+			<td>{{row["GST_number"]}}</td>
+			<td>{{row["webiste"]}}</td>
+		</tr>
+	{& endfor %}
+</table>
+</center>
+<br><br>
+</body>
+</html>
+
+
+
+
